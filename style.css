@@ -4,16 +4,15 @@
 
 * {
   box-sizing: border-box;
-  border :1px solid red;
+  border: 1px solid red;
 }
 
 body {
-  margin:0;
+  margin: 0;
   background-color: beige;
   border: 2px solid #4a2e2b;
-  color:#0f172a;
+  color: #0f172a;
   line-height: 1.6;
-
 }
 
 /* =====================================================
@@ -30,8 +29,8 @@ body {
    5. INTRODUCTION CARD
 ===================================================== */
 
-.artiste-card {
-  background: beige;
+.card {
+  background: #ffffff;
   padding: 40px;
   margin-bottom: 40px;
   border: 1px solid #e2e8f0;
@@ -57,16 +56,13 @@ body {
   border-radius: 999px;
 }
 
-
 .btn:hover {
   background: #1e3a8a;
 }
 
-
 .btn:active {
   transform: translateY(1px);
 }
-
 
 a:focus-visible {
   outline: 3px solid #f59e0b;
@@ -76,7 +72,6 @@ a:focus-visible {
 /* =====================================================
    2. SELECTORS
 ===================================================== */
-
 
 h1 {
   color: #4a2e2b;
@@ -92,12 +87,10 @@ p {
   font-style: italic;
 }
 img {
-  display:block;
   width: 200px;
   height: 200px;
   border-radius: 12px;
-  margin: 0 auto 16px;
-  object-fit: cover;
+  margin-left: 43%;
 }
 
 * {
@@ -130,16 +123,4 @@ a {
 }
 a:hover {
   background-color: #6e4e42;
-}
-.artiste-grid {
-  display: grid;
-  grid-template-columns:1fr 1fr 1fr;
-  gap: 5px;
-  padding: 20px;
-}
-.social-links {
-  display: grid;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
 }
