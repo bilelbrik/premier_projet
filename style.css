@@ -30,8 +30,8 @@ body {
    5. INTRODUCTION CARD
 ===================================================== */
 
-.card {
-  background: #ffffff;
+.artiste-card {
+  background: beige;
   padding: 40px;
   margin-bottom: 40px;
   border: 1px solid #e2e8f0;
@@ -92,10 +92,12 @@ p {
   font-style: italic;
 }
 img {
+  display:block;
   width: 200px;
   height: 200px;
   border-radius: 12px;
-  margin-left: 43%;
+  margin: 0 auto 16px;
+  object-fit: cover;
 }
 
 * {
@@ -128,4 +130,16 @@ a {
 }
 a:hover {
   background-color: #6e4e42;
+}
+.artiste-grid {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap: 5px;
+  padding: 20px;
+}
+.social-links {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
