@@ -1,25 +1,34 @@
 <!doctype html>
 <head>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
   <meta charset="UTF-8" />
   <title>Profile Artiste</title>
 </head>
 
-<body>
-  <header>
-    <h1>Lacrim</h1>
+<body class="bg-light">
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Lacrim profil</a>
+       <div>
+          <a class="text-white text-decoration-none me-3" href="#biographie">Biographie</a>
+          <a class="text-white text-decoration-none me-3" href="#albums">Albums</a>
+          <a class="text-white text-decoration-none me-3" href="#réseaux">Réseaux</a>
+      </div>
+
+    </div>
+    </nav>
     
     <!-- GRID CONTAINER -->
       <main class="container">
-      <div class="artiste-grid">
+      <div class="row g-4 text-center">
         
 
        <!-- Card 1 -->
-        <article class="artiste-card">
-          <div class="image-box">
-            <img src="lacrim.jpg" alt="Lacrim">
-            <span class="badge">New</span>
-          </div>
+       <div class="col-12 col-md-4">
+          <article id="biographie" class="card h-100 p-3 shadow-sm">
+            <img src="lacrim.jpg" alt="Lacrim" class="rounded mx-auto mb-3" style="width: 180px;height: 180px;object-fit: cover;">
+            
           
           <h2>Biographie</h2>
 
@@ -30,45 +39,42 @@
       surnommée « la Crim » par apocope.
           </p>
         </article>
-
+       </div>
 
         <!-- Card 2 -->
-        <article class="artiste-card">
-          <div class="image-box">
-            <img src="lacrim.jpg" alt="Lacrim">
-            <span class="badge">New</span>
-          </div>
+      <div class="col-12 col-md-4">
+        <article id="albums" class="card h-100 p-3 shadow-sm">
+
+                <img src="lacrim.jpg" alt="Lacrim"class="rounded mx-auto mb-3" style="width: 180px;height: 180px;object-fit: cover;">
+            
           
           <h2>Albums Clés:</h2>
 
-        <ul>
-      <li>Corleone (2014)</li>
-      <li>Force & Honneur (2017)</li>
-      <li>R.I.P.R.O</li>
-    </ul>
+          <ul class="list-unstyled">
+              <li>Corleone (2014)</li>
+              <li>Force & Honneur (2017)</li>
+              <li>R.I.P.R.O</li>
+          </ul>
 
         </article>
-        
+      </div>
 
         <!-- Card 3 -->
-        <article class="artiste-card">
-          <div class="image-box">
-            <img src="lacrim.jpg" alt="Lacrim">
-            <span class="badge">New</span>
-          </div>
+        <div class="col-12 col-md-4">
+          <article id="réseaux" class="card h-100 p-3 shadow-sm">
+            <img src="lacrim.jpg" alt="Lacrim" class="rounded mx-auto mb-3" style="width: 180px;height: 180px;object-fit: cover;">
+            
         
           
-          <h2>Réseaux:</h2>
+            <h2>Réseaux:</h2>
+            <div class="d-flex flex-column align-items-center gap-2 mt-3">
+                <a href="https://lacrim.store/" class="btn btn-dark btn-sm">Lacrim Store</a>
+                <a href="https://open.spotify.com/intl-fr/artist/7DUTsWY3RBd64vh8UtgtYA"class="btn btn-success btn-sm">Spotify</a>
+                <a href="https://www.instagram.com/officielacrim/?hl=ar"class="btn btn-danger btn-sm">Instagram</a>
+            </div>
+          </article>
+        </div>
 
-       <p class="social-links">
-      <a href="https://lacrim.store/">Lacrim Store</a>
-      <a href="https://open.spotify.com/intl-fr/artist/7DUTsWY3RBd64vh8UtgtYA"
-        >Spotify</a
-      >
-      <a href="https://www.instagram.com/officielacrim/?hl=ar">Instagram</a>
-    </p>
-        </article>
-        
     </main>
   </header>
 </body>
